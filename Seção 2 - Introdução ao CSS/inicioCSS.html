@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início do CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            /*Coloca Arial, senão Helvetica senão sans-serif*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-variant: small-caps;
+            color: green;
+            background-color: yellowgreen;
+            margin: 0 10px 20px 30px;
+            padding: 30px 20px 10px 0;
+            border-bottom-color: red;
+            border-bottom-width: 10px;
+            border-bottom-style: dotted;
+            border-bottom-color: red;
+        }
+
+        h2 {
+            background-color: aquamarine;
+        }
+
+        p {
+            font-variant: small-caps;
+            text-align: center;
+            text-decoration: underline;
+            text-indent: 20px;
+            /* text-transform: uppercase; */
+        }
+
+        /*Botão do mouse pressionado*/
+        a:active {
+            background-color: red;
+        }
+
+        /*Mouse em cima*/
+        a:hover {
+            background-color: green;
+        }
+
+        /*Link visitado*/
+        a:visited {
+            background-color: rgb(0, 4, 128);
+        }
+
+        ul li {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estrutura básica</h1>
+    <h2>Subtítulo da página</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid quae, veritatis et reprehenderit odio
+        deleniti labore magni, ad expedita fugit consequatur delectus beatae! Ea voluptatem sed consectetur impedit
+        deserunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid quae, veritatis et reprehenderit odio
+        deleniti labore magni, ad expedita fugit consequatur delectus beatae! Ea voluptatem sed consectetur impedit
+        deserunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid quae, veritatis et reprehenderit odio
+        deleniti labore magni, ad expedita fugit consequatur delectus beatae! Ea voluptatem sed consectetur impedit
+        deserunt.</p>
+
+
+    <a href="#" target="_blank">Pseudo-classes</a>
+    <hr>
+
+    <a href="#">Segundo link</a>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+
+</html>
