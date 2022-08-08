@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.header {
+  background-image: url(./imagens/bg-3.jpg);
+  background-position: right;
+  background-attachment: local;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 20px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.nav-btn:hover {
+  background-color: gray;
+}
+
+.header-titles {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  color: white;
+  max-width: 400px;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px #000000;
+}
+
+.header-subtitle {
+  background: rgba(0, 0, 0, 0.267);
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 15px;
+  width: fit-content;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(193, 192, 192);
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.main-card {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.main-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.main-card-container-img {
+  width: 200px;
+}
+
+.main-card-container-title {
+  background-color: rgb(71, 71, 71);
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.main-description {
+  padding: 10px;
+  background-color: white;
+}
+
+.main-description-title {
+  background-color: rgb(191, 254, 192);
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  padding: 20px;
+}
+
+.footer-text {
+  color: white;
+  font-size: smaller;
+  text-shadow: 2px 2px #000000;
+}
