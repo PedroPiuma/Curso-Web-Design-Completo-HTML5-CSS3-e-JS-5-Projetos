@@ -39,6 +39,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: gray;
+  transition: color 0.3s linear;
 }
 
 .header-nav-div-link:hover {
@@ -96,8 +97,12 @@ body {
 .main-description-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(29, 69, 69);
+  background-image: url(./imagens/bg_detalhe.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
+  background-color: #003d52;
   padding-left: 100px;
   padding-top: 80px;
   margin-bottom: 50px;

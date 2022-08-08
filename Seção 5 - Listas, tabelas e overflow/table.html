@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table style="border: 1px solid red; border-collapse: collapse;">
+        <caption>Título da tabela</caption>
+
+        <thead>
+            <tr>
+                <th>Cabeçalho semantico</th>
+            </tr>
+        </thead>
+        <tr style="border: 1px solid red;">
+            <td colspan="2" style="border: 1px solid red;">1A</td>
+            <!-- <td>1B</td> -->
+        </tr>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid red;">2A</td>
+                <td style="border: 1px solid red;">2B</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid red;">3A</td>
+                <td rowspan="2" style="border: 1px solid red;">3B</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid red;">4B</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
