@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a,
+        button {
+            cursor: pointer;
+        }
+
+        .header {
+            background-image: url(./imagens/bg-3.jpg);
+            background-position: right;
+            background-attachment: local;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            padding: 20px 20px 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: right;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        .header-titles {
+            margin: 0 auto;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-title {
+            color: white;
+            max-width: 400px;
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 2px 2px #000000;
+        }
+
+        .header-subtitle {
+            background: rgba(0, 0, 0, 0.267);
+            color: white;
+            border-bottom: 2px solid white;
+            padding: 15px;
+            width: fit-content;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(193, 192, 192);
+            padding: 20px 40px;
+            gap: 20px;
+        }
+
+        .main-card {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+            width: 100%;
+            background-color: white;
+        }
+
+        .main-card-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .main-card-container-img {
+            width: 200px;
+        }
+
+        .main-card-container-title {
+            background-color: rgb(71, 71, 71);
+            margin: 0;
+            padding: 10px;
+            color: white;
+        }
+
+        .main-description {
+            padding: 10px;
+            background-color: white;
+        }
+
+        .main-description-title {
+            background-color: rgb(191, 254, 192);
+            padding: 10px;
+            border-bottom: 1px solid gray;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            background-color: gray;
+            padding: 20px;
+        }
+
+        .footer-text {
+            color: white;
+            font-size: smaller;
+            text-shadow: 2px 2px #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="https://www.google.com.br/" target="_blank"><button class="nav-btn">INÍCIO</button></a>
+            <button class="nav-btn">QUEM SOU EU</button>
+            <button class="nav-btn">CONTATO</button>
+        </nav>
+        <div class="header-titles">
+            <h1 class="header-title">CURSOS WEB FUNDAMENTOS</h1>
+            <h3 class="header-subtitle">Aprenda HTML, CSS e JavaScript</h3>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="main-card">
+            <div class="main-card-container">
+                <img class="main-card-container-img" src="./imagens/card_01.png" alt="">
+                <p class="main-card-container-title">SELETORES</p>
+            </div>
+            <div class="main-card-container">
+                <img class="main-card-container-img" src="./imagens/card_02.jpg" alt="">
+                <p class="main-card-container-title">POSICIONAMENTO</p>
+            </div>
+            <div class="main-card-container">
+                <img class="main-card-container-img" src="./imagens/card_03.jpg" alt="">
+                <p class="main-card-container-title">FONTES E ÍCONES</p>
+            </div>
+        </section>
+
+        <section class="main-description">
+            <h3 class="main-description-title">título</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam asperiores cupiditate ipsum architecto
+                obcaecati unde officiis, nam animi quis neque ipsa aperiam perspiciatis doloremque vel quisquam
+                expedita? Modi, nostrum suscipit!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero eum sunt, odit deleniti, facilis, in
+                possimus porro ut minus hic alias saepe reiciendis maiores voluptatem dolorem quas accusantium id!</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span class="footer-text">Copyrigth © 2016</span>
+    </footer>
+</body>
+
+</html>
