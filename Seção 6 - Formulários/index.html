@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .formLogin {
+            margin: 0 auto;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="formLogin">
+        <fieldset>
+            <legend>Login</legend>
+
+            <label for="user">Digite o seu usuário</label>
+            <!-- autofocus -->
+            <input type="text" id="user" name="user" autofocus>
+
+            <label for="pass">Digite a senha</label>
+            <input type="password" id="pass" name="pass" required>
+
+            <input type="date" name="" id="" min="2022-01-30" max="2138-01-30">
+
+            <p>Sexo</p>
+            <input type="radio" name="sexo" value="M">
+            <label for="">Masculino</label>
+            <input type="radio" name="sexo" value="F">
+            <label for="">Feminino</label>
+
+
+            <select name="estado" id="">
+                <option value="0">Selecione</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+            </select>
+
+            <input type="submit" value="logar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <label for="">
+                <input type="checkbox" name="html" value="html" id="">
+            </label>
+            <label for="">
+                <input type="checkbox" name="css" value="css" id="">
+            </label>
+            <label for="">
+                <input type="checkbox" name="js" value="js" id="">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+
+            <input type="range" name="" id="" step="2" min="0" max="10">
+
+            <select name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+
+            <textarea name="msg" id="" cols="30" rows="10" style="resize: none;">Olá</textarea>
+            <textarea name="msg" id="" cols="30" rows="10" style="resize: none;" readonly>Apenas para ler</textarea>
+            <textarea name="msg" id="" cols="30" rows="10" style="resize: none;" disabled>Desabilitado</textarea>
+        </fieldset>
+    </form>
+</body>
+
+</html>
