@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            padding: 100px 300px;
+        }
+
+        label {
+            font-size: 36px;
+            border: 1px solid red;
+            display: inline-block;
+            min-width: 220px;
+            text-align: right;
+            height: fit-content;
+        }
+
+        input[type='checkbox'] {
+            display: none;
+        }
+
+        input[type='checkbox']:checked {
+            transform: translate(-10px);
+        }
+
+        .chk {
+            background-color: gray;
+            width: 80px;
+            height: 35px;
+            border-radius: 15px;
+            padding: 2.5px;
+        }
+
+        .chk-ball {
+            background-color: rgb(251, 255, 0);
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            transition: 0.5s linear;
+        }
+
+        input[type='checkbox']:checked+.chk>.chk-ball {
+            background-color: red;
+            transform: translate(40px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <label for="esporte"><input type="checkbox" name="esporte" id="esporte">
+            <div class="chk">
+                <div class="chk-ball"></div>
+            </div>Esporte
+        </label>
+        <label for="politica"><input type="checkbox" name="politica" id="politica">
+            <div class="chk">
+                <div class="chk-ball"></div>
+            </div>Política
+        </label>
+        <label for="educacao"><input type="checkbox" name="educacao" id="educacao">
+            <div class="chk">
+                <div class="chk-ball"></div>
+            </div>Educação
+        </label>
+    </div>
+
+</body>
+
+</html>

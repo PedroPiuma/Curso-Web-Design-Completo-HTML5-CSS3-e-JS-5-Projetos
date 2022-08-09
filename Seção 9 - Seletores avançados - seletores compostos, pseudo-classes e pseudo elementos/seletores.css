@@ -1,0 +1,59 @@
+/* <article>
+        <h3></h3>
+        <p><a href=""><b></b></a></p>
+        <p><a href=""><b></b></a></p>
+        <p><a href=""><b></b></a></p>
+    </article> */
+
+/* um b filho direto de p */
+article p > b {
+  background-color: red;
+}
+
+/* pega um p que vem imediatamente após um h3 */
+article h3 + p {
+  background-color: red;
+}
+
+/* todos p imediatamente após um h3 */
+article h3 ~ p {
+  background-color: red;
+}
+
+/* [atributo^="valor"] */
+/* Todos que tiverem um atributo iniciando com o valor passado */
+a[http^="http"] {
+  color: red;
+}
+
+/* Todo elemento que não for a */
+/* serve pra quaisquer outros */
+:not(a) {
+  color: red;
+}
+
+/* Utilizando before e after sempre
+vai ser necessário utilizar content */
+div {
+  border: 3px solid red;
+  padding: 25px;
+  position: relative;
+  margin: 25px;
+}
+
+div:before {
+  content: "texto before: ";
+  background-color: #ccc;
+}
+
+div:after {
+  /* content: "texto after"; */
+  content: "";
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

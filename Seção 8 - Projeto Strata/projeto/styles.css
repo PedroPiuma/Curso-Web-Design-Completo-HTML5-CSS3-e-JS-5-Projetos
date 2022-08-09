@@ -38,7 +38,7 @@ body {
   background-image: url(./bg.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -351,6 +351,16 @@ header strong {
   color: rgb(255, 0, 0);
 }
 
+/* Por que não pega estilo? */
+/* Por que não pega estilo? */
+/* Por que não pega estilo? */
+/* Por que não pega estilo? */
+/* Por que não pega estilo? */
+/* .main-form input[type="radio"],
+.main-form input[type="checkbox"] {
+  border: 10px solid red;
+} */
+
 .main-txt {
   color: rgb(88, 82, 70);
   margin-top: 60px;
@@ -363,4 +373,33 @@ header strong {
 
 .main-txt img {
   border-radius: 10px;
+}
+
+#first-img {
+  float: left;
+}
+
+#second-img {
+  float: right;
+}
+
+#footer {
+  position: fixed;
+  bottom: 60px;
+  left: 170px;
+  color: gray;
+}
+
+#footer a {
+  border-bottom: 1px currentColor;
+  border-bottom-style: dotted;
+}
+
+#footer a:hover {
+  color: orange;
+}
+
+#footer div {
+  display: flex;
+  justify-content: flex-end;
 }

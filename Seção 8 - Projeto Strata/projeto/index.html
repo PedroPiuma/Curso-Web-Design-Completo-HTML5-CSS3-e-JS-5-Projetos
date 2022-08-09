@@ -116,11 +116,11 @@
                 </form>
 
                 <address class="main-contact-container-address">
-                    <p>Endereço: 1234 Somewhere Rd. Nasvile, 1234 Brasil Rd.</p>
+                    <p><span>Endereço:</span> 1234 Somewhere Rd. Nasvile, 1234 Brasil Rd.</p>
 
-                    <p>Telefone: 000-000-000</p>
+                    <p><span>Telefone:</span> 000-000-000</p>
 
-                    <p>E-mai: email@server.com</p>
+                    <p><span>E-mai:</span> email@server.com</p>
                 </address>
             </div>
 
@@ -159,9 +159,9 @@
                 <h2 class="main-formats-title">Preformatador</h2>
                 <pre>
                     <code>
-                        <!-- <script> -->
+                        &lt;script&gt;
                             alert('oi');
-                        <!-- </script> -->
+                        &lt;/script&gt; 
                     </code>
                 </pre>
             </article>
@@ -259,8 +259,8 @@
 
         <section class="main-txt">
             <h2 class="main-txt-title">Left & Rigth</h2>
-
-            <p> <img src="./avatar.jpg" alt="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <img id="first-img" src="./avatar.jpg" alt="">
+            <p id="first-txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis cupiditate expedita earum
                 neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
                 sunt accusamus perferendis doloribus aperiam sed. Lorem, ipsum dolor sit amet consectetur
@@ -270,9 +270,9 @@
                 adipisicing elit. Perspiciatis cupiditate expedita earum
                 neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
                 sunt accusamus perferendis doloribus aperiam sed.</p>
-            </div>
 
-            <p> <img src="./avatar.jpg" alt="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <img id="second-img" src="./avatar.jpg" alt="">
+            <p id="second-txt"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis cupiditate expedita earum
                 neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
                 sunt accusamus perferendis doloribus aperiam sed. Lorem, ipsum dolor sit amet consectetur
@@ -282,10 +282,17 @@
                 adipisicing elit. Perspiciatis cupiditate expedita earum
                 neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
                 sunt accusamus perferendis doloribus aperiam sed.</p>
-            </div>
         </section>
     </main>
 
+    <footer id="footer">
+        <!-- <div style="display: flex; justify-content: flex-end;"> -->
+        <div>
+            <img src="./icons8-twitter-30.png" alt="">
+            <img src="./icons8-facebook-novo-30.png" alt="">
+        </div>
+        <p>© Untitled | Design <a href="#">HTML 5 UP</a></p>
+    </footer>
 </body>
 
 </html>
