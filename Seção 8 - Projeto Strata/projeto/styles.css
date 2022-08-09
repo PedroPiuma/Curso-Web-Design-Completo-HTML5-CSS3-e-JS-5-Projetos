@@ -10,6 +10,17 @@ a {
   color: currentColor;
 }
 
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: rgb(183, 179, 179);
+}
+
 header a.font {
   border-bottom: 1px gray;
   border-bottom-style: dotted;
@@ -54,7 +65,7 @@ header strong {
 .main {
   overflow: scroll;
   max-height: 100vh;
-  padding: 100px 40px;
+  padding: 100px 60px;
 }
 
 .main-intro {
@@ -64,9 +75,292 @@ header strong {
   gap: 30px;
 }
 
+.main-intro-title {
+  font-weight: 400;
+}
+
 .main-intro-link {
   padding: 15px;
   border: 1px solid rgba(88, 82, 70, 0.422);
   width: fit-content;
   border-radius: 5px;
+}
+
+.main-gallery {
+  margin-top: 30px;
+  color: rgb(88, 82, 70);
+}
+
+.main-gallery-title {
+  font-weight: 400;
+}
+
+.main-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  column-gap: 120px;
+  row-gap: 40px;
+}
+
+.main-gallery-container-img {
+  border-radius: 8px;
+}
+
+.main-gallery-container-txt {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.main-gallery-btn {
+  color: white;
+  background-color: rgb(78, 248, 157);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.main-gallery-btn:hover {
+  color: orange;
+}
+
+.main-contact {
+  margin-top: 30px;
+  color: rgb(88, 82, 70);
+}
+
+.main-contact-title {
+  font-weight: 400;
+}
+
+.main-contact-txt {
+  margin-top: 30px;
+}
+
+.main-contact-container {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.main-contact-container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-txt {
+  width: 100%;
+  min-width: 300px;
+}
+
+.main-contact-container-form-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.main-contact-container-form-inputs-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-input {
+  background-color: rgb(180, 179, 179);
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+}
+
+.main-contact-container-btn {
+  padding: 10px 15px;
+  border: 1px solid rgba(88, 82, 70, 0.422);
+  width: fit-content;
+  border-radius: 5px;
+  color: rgb(88, 82, 70);
+  cursor: pointer;
+}
+
+.main-contact-container-btn:hover {
+  color: orange;
+}
+
+.main-contact-container-address {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-elements {
+  color: rgb(88, 82, 70);
+  margin-top: 50px;
+}
+
+.main-elements-title {
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.main-elements-txt {
+  margin-top: 20px;
+}
+
+.main-elements-h {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-formats {
+  color: rgb(88, 82, 70);
+  margin-top: 30px;
+}
+
+.main-formats-bq {
+  border-left: 5px solid rgba(128, 128, 128, 0.619);
+  padding-left: 30px;
+}
+
+.main-formats-pre {
+  margin-top: 40px;
+}
+
+.main-formats-title {
+  font-weight: 400;
+}
+
+.main-formats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main-formats-lits-item {
+  margin-top: 10px;
+}
+
+.main-formats-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  width: fit-content;
+}
+
+.main-table {
+  border-collapse: collapse;
+  color: rgb(88, 82, 70);
+  width: 100%;
+  line-height: 50px;
+}
+
+.main-table-body-names {
+  font-weight: 700;
+  background-color: rgb(184, 170, 141);
+}
+
+.main-table-body-dscpt:nth-child(2n) {
+  background-color: rgb(224, 206, 168);
+}
+
+/* wtf?! */
+/* !!!!!!
+!!!!!!
+!!!!!!
+!!!!!!
+!!!!!!
+!!!!!!
+!!!!!! */
+.main-table-body-dscpt:nth-child(1) {
+  border-top: 3px solid red;
+}
+
+.main-table td {
+  padding-left: 40px;
+}
+
+.main-table tr {
+  border-bottom: 1px solid gray;
+}
+
+.main-table-body tr:last-child {
+  border-bottom: 3px solid rgb(88, 82, 70);
+}
+
+.main-form {
+  margin-top: 70px;
+}
+
+.main-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-form select {
+  font-size: 18px;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main-form label {
+  color: rgb(88, 82, 70);
+}
+
+.main-form input {
+  margin-right: 10px;
+}
+
+.main-form-btns {
+  display: flex;
+  gap: 30px;
+}
+
+.main-form-btns button {
+  font-size: 16px;
+  padding: 10px 30px;
+  width: fit-content;
+  border-radius: 8px;
+  border: none;
+}
+
+.main-form-btns-send {
+  background-color: rgb(59, 224, 59);
+  color: white;
+  transition: color 0.3s linear;
+}
+
+.main-form-btns-send:hover {
+  background-color: rgb(198, 251, 198);
+  color: green;
+}
+
+.main-form-btns-clear {
+  background-color: rgb(151, 151, 151);
+  color: white;
+  transition: color 0.3s linear;
+}
+
+.main-form-btns-clear:hover {
+  background-color: rgb(251, 198, 198);
+  color: rgb(255, 0, 0);
+}
+
+.main-txt {
+  color: rgb(88, 82, 70);
+  margin-top: 60px;
+}
+
+.main-txt-title {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.main-txt img {
+  border-radius: 10px;
 }

@@ -20,46 +20,269 @@
     </header>
 
     <main class="main">
+
         <section class="main-intro">
-            <h1>Quando o header é aside e o aside é no header</h1>
+            <h1 class="main-intro-title">Quando o header é aside e o aside é no header</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolore? Provident assumenda aut
                 consequatur dolore facere enim sint autem soluta. Quas fuga debitis officia quod ex soluta quisquam,
                 necessitatibus voluptas?</p>
             <a href="#" class="main-intro-link">Veja mais</a>
         </section>
 
+        <section class="main-gallery">
+            <h2 class="main-gallery-title">Recent Works</h2>
+            <div class="main-gallery-container">
+                <article>
+                    <img class="main-gallery-container-img" src="./thumbs/01.jpg" alt="">
+                    <div class="main-gallery-container-txt">
+                        <p>Magna sed consequatur tempus.</p>
+                        <p>Magna sed consequatur tempus lorem ispum.</p>
+                    </div>
+                </article>
+                <article>
+                    <img class="main-gallery-container-img" src="./thumbs/02.jpg" alt="">
+                    <div class="main-gallery-container-txt">
+                        <p>Magna sed consequatur tempus.</p>
+                        <p>Magna sed consequatur tempus lorem ispum.</p>
+                    </div>
+                </article>
+                <article>
+                    <img class="main-gallery-container-img" src="./thumbs/03.jpg" alt="">
+                    <div class="main-gallery-container-txt">
+                        <p>Magna sed consequatur tempus.</p>
+                        <p>Magna sed consequatur tempus lorem ispum.</p>
+                    </div>
+                </article>
+                <article>
+                    <img class="main-gallery-container-img" src="./thumbs/04.jpg" alt="">
+                    <div class="main-gallery-container-txt">
+                        <p>Magna sed consequatur tempus.</p>
+                        <p>Magna sed consequatur tempus lorem ispum.</p>
+                    </div>
+                </article>
+                <article>
+                    <img class="main-gallery-container-img" src="./thumbs/05.jpg" alt="">
+                    <div class="main-gallery-container-txt">
+                        <p>Magna sed consequatur tempus.</p>
+                        <p>Magna sed consequatur tempus lorem ispum.</p>
+                    </div>
+                </article>
+                <article>
+                    <img class="main-gallery-container-img" src="./thumbs/06.jpg" alt="">
+                    <div class="main-gallery-container-txt">
+                        <p>Magna sed consequatur tempus.</p>
+                        <p>Magna sed consequatur tempus lorem ispum.</p>
+                    </div>
+                </article>
+            </div>
+
+            <a href="#"><button class="main-gallery-btn">Veja Portfólio completo</button></a>
+
+        </section>
+
+        <section class="main-contact">
+            <h2 class="main-contact-title">Get in Touch</h2>
+            <p class="main-contact-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam repellendus
+                laudantium laborum
+                assumenda enim, suscipit nam quae deserunt corrupti odit obcaecati ducimus officia molestias
+                perspiciatis error sed commodi iste sapiente!</p>
+
+            <div class="main-contact-container">
+
+                <form action="" class="main-contact-container-form">
+
+                    <div class="main-contact-container-form-inputs">
+                        <div class="main-contact-container-form-inputs-box">
+                            <label for="name">Nome</label>
+                            <input class="input-txt main-input" type="text" id="name" placeholder="Nome completo"
+                                required>
+                        </div>
+
+                        <div class="main-contact-container-form-inputs-box">
+                            <label for="email">Email</label>
+                            <input class="input-txt main-input" type="email" name="email" id="email"
+                                placeholder="E-mail" required>
+                        </div>
+                    </div>
+
+                    <div class="main-contact-container-form-inputs-box">
+                        <label for="message">Digite sua mensagem</label>
+                        <textarea class="input-txt  main-input" name="message" id="message" cols="30" rows="10"
+                            required></textarea>
+                    </div>
+
+                    <button class="main-contact-container-btn" type="submit">Enviar</button>
+
+                </form>
+
+                <address class="main-contact-container-address">
+                    <p>Endereço: 1234 Somewhere Rd. Nasvile, 1234 Brasil Rd.</p>
+
+                    <p>Telefone: 000-000-000</p>
+
+                    <p>E-mai: email@server.com</p>
+                </address>
+            </div>
+
+        </section>
+
+        <section class="main-elements">
+            <h2 class="main-elements-title">Elements</h2>
+            <h3 class="main-elements-title">Text</h3>
+            <p class="main-elements-txt">This is <b>bold</b> and this is <strong>strong</strong>. <i>Italic</i>,
+                <em>emphasized</em>. This is
+                <sub>subscript</sub> <sup>superscript</sup>. <u>undelined</u> and this is <code>code: for(;;) { ... }.
+                    And <a href="#">a
+                        link</a></code> </p>
+            <h1 class="main-elements-h">h1</h1>
+            <h2 class="main-elements-h">h2</h2>
+            <h2 class="main-elements-h">h2</h2>
+            <h3 class="main-elements-h">h3</h3>
+            <h4 class="main-elements-h">h4</h4>
+            <h5 class="main-elements-h">h5</h5>
+            <h6 class="main-elements-h">h6</h6>
+            <hr>
+        </section>
+
+        <section class="main-formats">
+            <blockquote class="main-formats-bq" cite="http://developer.mozilla.org">
+                <br>
+                <p>Esta é uma citação tirada da Mozilla Developer Center.</p><br>
+            </blockquote>
+
+            <br>
+            <p>According to Mozilla's website,
+                <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
+                    was released in 2004 and became a big success.</q></p>
+
+            <article class="main-formats-pre">
+                <h2 class="main-formats-title">Preformatador</h2>
+                <pre>
+                    <code>
+                        <!-- <script> -->
+                            alert('oi');
+                        <!-- </script> -->
+                    </code>
+                </pre>
+            </article>
+
+            <article class="main-formats-list">
+                <h2 class="main-formats-title">Listas</h2>
+
+                <h3 class="main-formats-title">Não ordenada</h3>
+                <ul>
+                    <li class="main-formats-lits-item">Item 1</li>
+                    <li class="main-formats-lits-item">Item 2</li>
+                    <li class="main-formats-lits-item">Item 3</li>
+                </ul>
+
+                <h3 class="main-formats-title">Ordenada</h3>
+                <ol>
+                    <li class="main-formats-lits-item">Item 1</li>
+                    <li class="main-formats-lits-item">Item 2</li>
+                    <li class="main-formats-lits-item">Item 3</li>
+                </ol>
+            </article>
+
+            <article class="main-formats-icon">
+                <h3 class="main-formats-title">Icons</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" height="50px" width="50px" alt="">
+            </article>
+        </section>
+
         <section>
-            <h2>Recent Works</h2>
-            <article>
-                <img src="./thumbs/01.jpg" alt="">
-                <p>Magna sed consequatur tempus.</p>
-                <p>Magna sed consequatur tempus lorem ispum.</p>
-            </article>
-            <article>
-                <img src="./thumbs/01.jpg" alt="">
-                <p>Magna sed consequatur tempus.</p>
-                <p>Magna sed consequatur tempus lorem ispum.</p>
-            </article>
-            <article>
-                <img src="./thumbs/01.jpg" alt="">
-                <p>Magna sed consequatur tempus.</p>
-                <p>Magna sed consequatur tempus lorem ispum.</p>
-            </article>
-            <article>
-                <img src="./thumbs/01.jpg" alt="">
-                <p>Magna sed consequatur tempus.</p>
-                <p>Magna sed consequatur tempus lorem ispum.</p>
-            </article>
-            <article>
-                <img src="./thumbs/01.jpg" alt="">
-                <p>Magna sed consequatur tempus.</p>
-                <p>Magna sed consequatur tempus lorem ispum.</p>
-            </article>
-            <article>
-                <img src="./thumbs/01.jpg" alt="">
-                <p>Magna sed consequatur tempus.</p>
-                <p>Magna sed consequatur tempus lorem ispum.</p>
-            </article>
+            <table class="main-table">
+                <caption>Table</caption>
+                <thead>
+                    <tr>
+                        <th>Default</th>
+                    </tr>
+                </thead>
+
+                <tbody class="main-table-body">
+                    <tr class="main-table-body-names">
+                        <td>Name</td>
+                        <td>Description</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr class="main-table-body-dscpt">
+                        <td>Item One</td>
+                        <td>Ante turpis intenger aliquyet portifot</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr class="main-table-body-dscpt">
+                        <td>Item One</td>
+                        <td>Ante turpis intenger aliquyet portifot</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr class="main-table-body-dscpt">
+                        <td>Item One</td>
+                        <td>Ante turpis intenger aliquyet portifot</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr class="main-table-body-dscpt">
+                        <td>Item One</td>
+                        <td>Ante turpis intenger aliquyet portifot</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr class="main-table-body-dscpt">
+                        <td>Item One</td>
+                        <td>Ante turpis intenger aliquyet portifot</td>
+                        <td>19.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="main-form">
+            <form action="">
+                <select name="select" id="select" required>
+                    <option value="0">Selecione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for=""><input type="radio" name="action" id="action">Baixa prioridade</label>
+                <label for=""><input type="radio" name="action" id="action">Média prioridade</label>
+                <label for=""><input type="radio" name="action" id="action">Alta prioridade</label>
+                <label for=""><input type="checkbox" name="copy" id="copy">Envie-me uma cópia</label>
+                <label for=""><input type="checkbox" name="human" id="human">Sou Humano</label>
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Digita uma mensagem"></textarea>
+
+                <div class="main-form-btns">
+                    <button class="main-form-btns-send">Enviar</button>
+                    <button class="main-form-btns-clear">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="main-txt">
+            <h2 class="main-txt-title">Left & Rigth</h2>
+
+            <p> <img src="./avatar.jpg" alt="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis cupiditate expedita earum
+                neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
+                sunt accusamus perferendis doloribus aperiam sed. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Perspiciatis cupiditate expedita earum
+                neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
+                sunt accusamus perferendis doloribus aperiam sed. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Perspiciatis cupiditate expedita earum
+                neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
+                sunt accusamus perferendis doloribus aperiam sed.</p>
+            </div>
+
+            <p> <img src="./avatar.jpg" alt="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis cupiditate expedita earum
+                neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
+                sunt accusamus perferendis doloribus aperiam sed. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Perspiciatis cupiditate expedita earum
+                neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
+                sunt accusamus perferendis doloribus aperiam sed. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Perspiciatis cupiditate expedita earum
+                neque molestias tempora quae, optio atque hic sint doloribus. Dignissimos architecto necessitatibus
+                sunt accusamus perferendis doloribus aperiam sed.</p>
+            </div>
         </section>
     </main>
 
