@@ -1,0 +1,9 @@
+Necessário disparar evento para ocorrer transição
+
+transition: property1 duration1 timing-function1 delay1,
+            property2 duration2 timing-function2 delay2;
+
+transition-property:        property1,  property2;
+transition-duration:        duration1,  duration2;
+transition-timing-function: func1,      function2;
+transition-delay:           delay1,     delay2;
