@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .gridContainer {
+            display: grid;
+            /*Cria 4 colunas iguais*/
+            grid-template-columns: repeat(4, 1fr);
+            /*Cria 3 linhas de 100px*/
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+            background-color: aquamarine;
+        }
+
+        .gridItem {
+            border: 1px solid red;
+        }
+
+        .gridItem:nth-child(1) {
+            /*Item 1 começa coluna em linha vertical 1 e termina em linha vertical 4*/
+            grid-column: 1 / 4;
+        }
+
+        .gridItem:nth-child(2) {
+            /* grid-column-start: 4;
+            grid-column-end: 5; */
+            /*Item 2 começa coluna em linha vertical 4 e termina em linha vertical 5*/
+            grid-column: 4 / 5;
+            /* grid-row-start: 1;
+             grid-row-end: 2; */
+            /*Item 2 começa row em linha horizontal 1 e termina em linha horizontal 3*/
+            grid-row: 1 / 3;
+        }
+
+        .gridItem:nth-child(3),
+        .gridItem:nth-child(4),
+        .gridItem:nth-child(5) {
+            /*Itens 3, 4 e 5 iniciam em row 2 e terminam em row 4*/
+            grid-row: 2 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridContainer">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+    </div>
+</body>
+
+</html>
