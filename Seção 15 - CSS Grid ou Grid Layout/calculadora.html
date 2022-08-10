@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 80px;
+        }
+
+        button {
+            min-height: 50px;
+            font-size: 24px;
+        }
+
+        .calculator {
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px 1px;
+            max-width: 400px;
+        }
+
+        .calculator-display {
+            background-color: wheat;
+            text-align: right;
+            padding: 10px;
+            font-size: 24px;
+            border-top: 4px solid white;
+            border-left: 4px solid white;
+            margin-bottom: 20px;
+        }
+
+        .calculator-btn {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 5px;
+        }
+
+        #sum,
+        #zero {
+            background-color: gray;
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            border-left: 1px solid white;
+        }
+
+        #sum {
+            grid-row: 4 / 6;
+            grid-column: 4 / 5;
+        }
+
+        #zero {
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator-display">0</div>
+        <div class="calculator-btn">
+            <button>AC</button><button>%</button><button>X</button><button>/</button><button>7</button>
+            <button>8</button><button>9</button><button>=</button><button>4</button><button>5</button><button>6</button><button>-</button><button>1</button><button>2</button><button>3</button><button
+                id="sum">+</button><button id="zero">0</button><button>,</button>
+        </div>
+    </div>
+</body>
+
+</html>
