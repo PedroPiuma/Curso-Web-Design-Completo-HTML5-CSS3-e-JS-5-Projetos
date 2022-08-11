@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercicio</h1>
+    <script>
+        // let numberOne = parseInt(prompt('Digite um número.'))
+        // let numberTwo = parseInt(prompt('Digite outro número.'))
+
+        // alert(`A subtração de ${numberOne} - ${numberTwo} é ${numberOne - numberTwo}!\n
+        // A multiplicação de ${numberOne} * ${numberTwo} é ${numberOne * numberTwo}!\n
+        // A divisão de ${numberOne} / ${numberTwo} é ${numberOne / numberTwo}!\n
+        // A soma de ${numberOne} + ${numberTwo} é ${numberOne + numberTwo}!\n
+        // A média de ${numberOne} + ${numberTwo} é ${(numberOne + numberTwo)/2}!\n
+        // A resto de ${numberOne} / ${numberTwo} é ${numberOne % numberTwo}!\n
+        // O ${numberOne} elevado a ${numberTwo} é ${numberOne ** numberTwo}!\n`)
+
+        // if (numberOne > numberTwo) alert(`${numberOne} é mais que ${numberTwo}`)
+        // else if (numberOne < numberTwo) alert(`${numberOne} é menor que ${numberTwo}`)
+        // else alert(`${numberOne} é igual ${numberTwo}`)
+
+
+        let playerOne = prompt('Jogador 1: Digite um número.')
+        let playerTwo = prompt('Jogador 2: Digite um número.')
+
+        if (playerOne === playerTwo) alert('EMPATE')
+        else {
+            let randomNumber = parseInt(Math.random() * 2) === 0
+            if (randomNumber) alert(playerOne < playerTwo ? `Jogador 1 venceu` : `Jogador 2 venceu`)
+            else alert(playerOne > playerTwo ? 'Jogador 1 venceu' : 'Jogador 2 venceu')
+        }
+    </script>
+</body>
+
+</html>
