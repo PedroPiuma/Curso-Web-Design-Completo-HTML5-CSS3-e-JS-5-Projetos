@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>exercicio</h1>
+
+    <button onclick="disparar()">Resultado</button>
+
+    <script>
+        const disparar = () => {
+            if (isNaN(numeroUm)) return alert('Digitação errada')
+            if (isNaN(numeroDois)) return alert('Digitação errada')
+            alert(`A área do retângulo é ${numeroUm * numeroDois}`)
+        }
+
+        let numeroUm = Number(prompt('Digite o primeiro número (lado de um retângulo)'))
+        let numeroDois = Number(prompt('Digite o segundo número (lado de um retângulo)'))
+        disparar()
+    </script>
+</body>
+
+</html>

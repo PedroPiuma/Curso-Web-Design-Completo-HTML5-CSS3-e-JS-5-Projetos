@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="output">
+
+    </div>
+    <script>
+        const teste = () => {
+            console.log(arguments)
+        }
+
+        teste(1, 2, 23, 4, 5, 5, 6)
+
+        const calcMedia = (...rest) => rest.reduce((acc, el) => acc + el) / rest.length
+        const result = calcMedia(1, 2, 3, 4)
+        console.log(result)
+        alert(result)
+
+        document.querySelector('#output').innerHTML = `<p style="font-size: 35px;">${result}</p>`
+    </script>
+</body>
+
+</html>
