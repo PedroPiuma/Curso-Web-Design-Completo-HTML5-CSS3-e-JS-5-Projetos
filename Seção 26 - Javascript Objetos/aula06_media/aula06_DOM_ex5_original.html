@@ -85,13 +85,27 @@
 
 	<script>
 		const trs = Object.values(document.querySelectorAll('.aluno'))
-		console.log(trs)
+		// console.log(trs)
 
-		const tds = trs.map((el, indice) => Object.values(trs[indice].querySelectorAll('td')))
-		console.log(tds)
+		const tds = trs.map((el, indice) => {
+			const linhas = Object.values(trs[indice].querySelectorAll('td'))
+			console.log(linhas)
 
-		console.log(tds[0])
+			linhas.reduce((acc, el, indice) => {
+				console.log(el, indice)
 
+			}, [0])
+
+			return linhas
+
+		})
+		// console.log(tds)
+
+		// const teste = tds.filter((elem, indice) => indice > 0 && indice <= 4)
+		// console.log(teste)
+
+		// const notas = tds.map(e => e.filter((elem, indice) => indice > 0 && indice <= 4))
+		// console.log(notas)
 
 		// const tds = Object.values(trs).map(e => {
 		// 	return console.log(e)
