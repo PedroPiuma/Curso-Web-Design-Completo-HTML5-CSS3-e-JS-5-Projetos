@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="msg" id="msg" cols="30" rows="10" maxlength="20"></textarea>
+    <span id="counter">0/20</span>
+    <script>
+        const counter = document.querySelector('#counter')
+        const textarea = document.querySelector('#msg')
+        const change = textarea.addEventListener('input', e => {
+            textarea.value.length === 20 ? alert('Máximo atingido!') : ''
+            return counter.innerHTML = `${textarea.value.length}/20`
+        })
+    </script>
+</body>
+
+</html>
