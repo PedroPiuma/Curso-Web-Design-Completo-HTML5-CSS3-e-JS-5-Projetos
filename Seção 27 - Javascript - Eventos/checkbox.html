@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="name" placeholder="Nome">
+        <label for="checkbox">Aceitar checkbox para enviar</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <button id="btn" type="button">Enviar</button>
+    </form>
+
+    <script>
+        const name = document.querySelector('#name')
+        const checkbox = document.querySelector('#checkbox')
+        const btn = document.querySelector('#btn')
+        btn.disabled = true
+        checkbox.addEventListener('change', e => e.target.checked ? btn.disabled = false : btn.disabled = true)
+    </script>
+
+</body>
+
+</html>

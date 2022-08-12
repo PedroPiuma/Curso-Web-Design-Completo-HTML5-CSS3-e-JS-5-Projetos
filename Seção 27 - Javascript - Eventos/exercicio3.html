@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adicionar item na lista</h1>
+
+    <p>Lista</p>
+
+    <form action="">
+        <label for="item">Item:</label>
+        <input type="text" id="item">
+        <button>Adicionar</button>
+    </form>
+    <ul id="lista">
+    </ul>
+
+    <script>
+        const lista = document.querySelector('#lista')
+        const item = document.querySelector('#item')
+        const form = document.querySelector('form')
+        form.addEventListener('submit', e => submit(e))
+
+        const removeOption = (e) => {
+            const result = prompt('Deseja remover o item da lista? (y/n)').toLowerCase()
+            result === 'y' || result === 'yes' ? e.target.remove() : ''
+        }
+
+        const submit = (event) => {
+            event.preventDefault()
+            const li = document.createElement('li')
+            lista.appendChild(li)
+            li.innerText = item.value
+            li.classList.add('item')
+            li.addEventListener('click', e => removeOption(e))
+        }
+    </script>
+</body>
+
+</html>
