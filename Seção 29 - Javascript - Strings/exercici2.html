@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam inventore nostrum, distinctio, ab quo aliquam
+        nisi animi exercitationem numquam commodi sapiente ipsa, laborum debitis eius necessitatibus esse tenetur
+        facilis voluptate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam inventore nostrum, distinctio, ab quo aliquam
+        nisi animi exercitationem numquam commodi sapiente ipsa, laborum debitis eius necessitatibus esse tenetur
+        facilis voluptate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam inventore nostrum, distinctio, ab quo aliquam
+        nisi animi exercitationem numquam commodi sapiente ipsa, laborum debitis eius necessitatibus esse tenetur
+        facilis voluptate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam inventore nostrum, distinctio, ab quo aliquam
+        nisi animi exercitationem numquam commodi sapiente ipsa, laborum debitis eius necessitatibus esse tenetur
+        facilis voluptate.
+    </p>
+
+
+    <script>
+        const p = Object.values(document.querySelectorAll('p'))
+        const checkLength = paragraph => paragraph
+            .forEach(e => e.innerText.length > 200 ? e.innerText = e.innerText
+                .slice(0, 200) + ' ...' : '')
+
+        checkLength(p)
+    </script>
+</body>
+
+</html>
