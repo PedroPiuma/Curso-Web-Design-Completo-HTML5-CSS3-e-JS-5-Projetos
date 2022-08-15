@@ -1,9 +1,9 @@
 window.onload = () => {
     const hamburguer = document.querySelector('#btn')
-    console.log(hamburguer)
+    const html = document.querySelector('html')
 
-    hamburguer.addEventListener('click', e => hamburguer.style)
-
-    // const showMenu = (e) => console.log(e)
-
+    hamburguer.addEventListener('click', e => {
+        const flag = html.classList.contains('menu-opened')
+        return flag ? html.classList.remove('menu-opened') : html.classList.add('menu-opened')
+    })
 }

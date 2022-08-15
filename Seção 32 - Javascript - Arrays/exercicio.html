@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .js {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor Javascript sit amet consectetur adipisicing elit. Assumenda architecto ab reprehenderit nemo
+        maxime,
+        libero rem repudiandae autem iste reiciendis consectetur repellat, accusantium soluta quasi eveniet commodi!
+        Nostrum, assumenda numquam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto ab reprehenderit nemo maxime,
+        libero rem repudiandae autem iste reiciendis consectetur repellat, accusantium soluta quasi eveniet commodi!
+        Nostrum, assumenda numquam?</p>
+    <p>Lorem Javascript ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto ab reprehenderit nemo
+        maxime,
+        libero rem repudiandae autem iste reiciendis consectetur repellat, accusantium soluta quasi eveniet commodi!
+        Nostrum, assumenda numquam?</p>
+    <p>Lorem ipsum dolor Javascript sit amet consectetur adipisicing elit. Assumenda architecto ab reprehenderit nemo
+        maxime,
+        libero rem repudiandae autem iste reiciendis consectetur repellat, accusantium soluta quasi eveniet commodi!
+        Nostrum, assumenda numquam?</p>
+    <p>Lorem Javascript ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto ab reprehenderit nemo
+        maxime,
+        libero rem repudiandae autem iste reiciendis consectetur repellat, accusantium soluta quasi eveniet commodi!
+        Nostrum, assumenda numquam?</p>
+
+
+    <script>
+        const ps = Object.values(document.querySelectorAll('p'))
+        ps.forEach(e => {
+            const qtd = e.innerHTML.split(' ')
+            const words = qtd.length > 10 ? qtd.slice(0, 10) : ''
+            e.innerHTML = words.join(' ') + ' ...'
+            console.log(e.innerHTML)
+            e.innerHTML = e.innerHTML.replaceAll('Javascript', '<span class="js">Javascript</span>')
+        })
+    </script>
+</body>
+
+</html>
