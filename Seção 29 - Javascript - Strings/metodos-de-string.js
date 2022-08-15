@@ -1,0 +1,15 @@
+const arr = 'minha string'
+console.log(arr.length)
+console.log(arr.indexOf('m'))
+console.log(arr.indexOf('index'))
+console.log(arr.indexOf('string'))
+console.log(arr.lastIndexOf('string'))
+console.log(arr.slice(5))
+console.log(arr.slice(5, 10))
+console.log(arr.substring(5, 10))
+console.log(arr.split(' '))
+console.log(arr.split('i'))
+console.log(arr.toUpperCase())
+console.log(arr.toLowerCase())
+console.log(arr.replace('string', 'trocada'))
+
