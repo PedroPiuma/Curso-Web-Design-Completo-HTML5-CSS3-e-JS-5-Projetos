@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            height: 50px;
+            font-size: 36px;
+            text-align: end;
+            padding-right: 40px;
+        }
+
+        button {
+            font-size: 24px;
+            margin-left: 15px;
+            padding: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cronômetro</h1>
+    <input id="display" type="text">
+    <button id="init" type="button">Iniciar</button>
+    <button id="pause" type="button">Pausar</button>
+    <button id="restart" type="button">Reiniciar</button>
+    <script>
+        const init = document.querySelector('#init')
+        const pause = document.querySelector('#pause')
+        const restart = document.querySelector('#restart')
+        const display = document.querySelector('#display')
+
+        let count = 0
+        let flag
+
+        const start = () => {
+            if (flag === 'pause') return display.value
+            display.value = count
+            count++
+            setTimeout(start, 1000)
+        }
+
+        const stop = () => {
+            flag = 'pause'
+            display.value = start()
+        }
+
+        const reset = () => {
+            flag = 'pause'
+            count = 0
+            display.value = 0
+        }
+
+        init.addEventListener('click', () => {
+            flag = 'start'
+            start()
+        })
+
+        pause.addEventListener('click', stop)
+
+        restart.addEventListener('click', reset)
+    </script>
+</body>
+
+</html>
