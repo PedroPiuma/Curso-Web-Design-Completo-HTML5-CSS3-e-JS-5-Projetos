@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .popup {
+            height: 500px;
+            width: 500px;
+            border: 1px solid red;
+            background-color: rgb(179, 179, 255);
+            font-size: 24px;
+            border-radius: 15px;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pop up irritante</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem sequi, ipsa commodi perspiciatis quia
+        totam veritatis perferendis ullam sed vel dignissimos modi eveniet, exercitationem eos et sapiente excepturi.
+        Nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem sequi, ipsa commodi perspiciatis quia
+        totam veritatis perferendis ullam sed vel dignissimos modi eveniet, exercitationem eos et sapiente excepturi.
+        Nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem sequi, ipsa commodi perspiciatis quia
+        totam veritatis perferendis ullam sed vel dignissimos modi eveniet, exercitationem eos et sapiente excepturi.
+        Nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem sequi, ipsa commodi perspiciatis quia
+        totam veritatis perferendis ullam sed vel dignissimos modi eveniet, exercitationem eos et sapiente excepturi.
+        Nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem sequi, ipsa commodi perspiciatis quia
+        totam veritatis perferendis ullam sed vel dignissimos modi eveniet, exercitationem eos et sapiente excepturi.
+        Nulla!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem sequi, ipsa commodi perspiciatis quia
+        totam veritatis perferendis ullam sed vel dignissimos modi eveniet, exercitationem eos et sapiente excepturi.
+        Nulla!</p>
+
+    <script>
+        const body = document.querySelector('body')
+        console.log(body)
+
+        const popup = () => {
+            const pop = document.createElement('div')
+            pop.classList.add('popup')
+            pop.innerText =
+                'Olá, sou popup chato demais, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem sequi, ipsa commodi perspiciatis quiatotam veritatis perferendis ullam sed vel dignissimos modi eveniet, exercitationem eos et sapiente excepturi. Nulla!'
+            body.appendChild(pop)
+            setTimeout(() => pop.remove(), 5000)
+        }
+
+        setTimeout(popup, 5000)
+    </script>
+</body>
+
+</html>
